@@ -1,0 +1,11 @@
+CREATE USER pilger with ENCRYPTED PASSWORD '123atgfd';
+
+
+CREATE DATABASE "pilger"
+	OWNER =  "pilger"
+    ENCODING 'UTF8'
+    TEMPLATE template0;
+
+
+GRANT ALL PRIVILEGES ON DATABASE pilger TO pilger;
+
