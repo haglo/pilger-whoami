@@ -19,6 +19,8 @@
 		<java.version>11</java.version>
 		<hibernate.version>5.4.0.Final</hibernate.version>
 		<jackson-json.version>2.9.8</jackson-json.version>
+		<keycloak.version>5.0.0</keycloak.version>
+		<resteasy.version>3.6.3.Final</resteasy.version>
 	</properties>
 
 	<dependencies>
@@ -65,6 +67,32 @@
 			<artifactId>jackson-databind</artifactId>
 			<version>${jackson-json.version}</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
+		<dependency>
+			<groupId>com.auth0</groupId>
+			<artifactId>java-jwt</artifactId>
+			<version>3.3.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.keycloak</groupId>
+			<artifactId>keycloak-admin-client</artifactId>
+			<version>${keycloak.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-client</artifactId>
+			<version>${resteasy.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-jackson2-provider</artifactId>
+			<version>${resteasy.version}</version>
+		</dependency>
+
 
 	</dependencies>
 

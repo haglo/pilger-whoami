@@ -1,4 +1,4 @@
-package org.pilger.controler;
+package org.pilger.model.entity;
 
 public class ResultDTO {
 	
